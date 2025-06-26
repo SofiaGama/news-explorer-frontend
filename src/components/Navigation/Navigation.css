@@ -1,0 +1,134 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigation__links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding-bottom: 28px;
+}
+
+.navigation__link:hover {
+  opacity: 0.7;
+}
+
+.navigation__link_active {
+  border-bottom: 3px solid white;
+}
+
+.navigation__link_dark {
+  padding-bottom: 32px;
+  color: black;
+}
+
+.navigation__link_dark.navigation__link_active {
+  border-bottom-color: black;
+}
+
+.navigation__auth-button {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 100px;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navigation__auth-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navigation__auth-button_dark {
+  border-color: #d1d1d1;
+  color: black;
+}
+
+.navigation__auth-button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+  }
+
+  .navigation_open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navigation__links {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .navigation__link_active {
+    border-bottom: 2px solid white;
+  }
+
+  .navigation__auth-button {
+    width: calc(100% - 32px);
+    max-width: 288px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .navigation {
+    display: flex;
+    margin-top: 90px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .navigation__links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .navigation__link {
+    font-size: 20px;
+    color: white;
+    border-bottom: none;
+    padding: 0;
+    text-align: start;
+    margin: -10px auto 7px 35px;
+  }
+}
