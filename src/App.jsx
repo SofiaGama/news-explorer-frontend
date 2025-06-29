@@ -352,8 +352,9 @@ function App() {
                     isLoggedIn={isLoggedIn}
                     isSavedNewsPage={false}
                     onSave={handleSaveArticle}
-                    onDelete={() => {}}
+                    onDelete={handleDeleteArticle}
                     savedArticles={savedArticles}
+                    onLoginClick={handleLoginClick}
                   />
                 </div>
 

@@ -115,6 +115,7 @@
   width: 288px;
   justify-content: center;
   margin-top: 115px;
+  gap: 8px;
 }
 
 .header__popup-auth-button:hover {
@@ -133,15 +134,22 @@
   z-index: 9998;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header {
     padding: 16px;
     min-height: 56px;
     border-bottom: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .header__menu-button {
     display: flex;
+  }
+
+  .header__button {
+    padding: 7px 20px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 

@@ -1,12 +1,48 @@
-# React + Vite
+News Explorer
+Aplicação web que permite buscar, visualizar e salvar artigos de notícias. Este projeto foi desenvolvido como parte do bootcamp da TripleTen, na etapa de desenvolvimento com React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descrição
+O News Explorer permite ao usuário pesquisar notícias através de uma palavra-chave e salvar seus artigos favoritos. Inclui autenticação, registro e uma interface adaptada para dispositivos desktop e mobile.
 
-Currently, two official plugins are available:
+Importante:
+Nesta etapa, o sistema de login, registro e salvamento de artigos é simulado no front-end (mockado). Isso ocorre porque ainda não há uma API própria desenvolvida. Portanto, ao fazer login ou criar conta, os dados não são validados contra um servidor real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Além disso, a busca de notícias é feita através de uma API pública de terceiros, o que pode gerar algumas limitações, como:
 
-## Expanding the ESLint configuration
+Resultados inconsistentes dependendo da disponibilidade da API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Imagens ou dados eventualmente ausentes ou quebrados.
+
+Sem controle total sobre os dados retornados.
+
+Funcionalidades
+
+Pesquisa de notícias por palavra-chave.
+
+Autenticação e registro de usuários (mockados).
+
+Salvar e remover artigos favoritos.
+
+Página dedicada para gerenciar artigos salvos.
+
+Layout responsivo para desktop e mobile.
+
+Estado visual do botão de bookmark:
+
+Normal
+
+Hover
+
+Salvo (ativo)
+
+Tecnologias Utilizadas
+
+React
+
+React Router
+
+JavaScript ES6+
+
+CSS3 (responsivo)
+
+Vite (build e desenvolvimento)
