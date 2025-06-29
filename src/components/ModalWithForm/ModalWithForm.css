@@ -86,6 +86,7 @@
     /* border-radius: 16px; */
     padding: 24px 20px;
     margin: 40px 0 -55px;
+    z-index: 10000;
   }
 
   .modal__title {
